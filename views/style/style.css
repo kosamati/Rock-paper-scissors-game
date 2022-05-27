@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+body {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  color: #ccc;
+}
+
+nav {
+  background-color: #444;
+  height: 40px;
+  position: fixed;
+  display: flex;
+  flex-direction: row-reverse;
+  top: 0;
+  font-size: 30px;
+  width: 100%;
+}
+nav .drag {
+  width: calc(100% - 180px);
+  -webkit-app-region: drag;
+  float: left;
+}
+nav button {
+  width: 60px;
+  height: 40px;
+  background-color: #424242;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+nav button:hover {
+  background-color: #555;
+}
+nav button:first-child:hover {
+  background-color: rgb(238, 74, 74);
+}
+
+#main {
+  margin-top: 10%;
+  width: 80%;
+  height: 70%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(44, 45, 66, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#main h1 {
+  font-size: 50px;
+}
+#main input[type=text] {
+  width: 60%;
+  margin: 2.5% 0 2.5% 0;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(44, 45, 66, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #222;
+}
+#main input[type=text]:focus {
+  outline: none;
+  box-shadow: 0 8px 32px 0 rgba(44, 45, 66, 0.8);
+}
+#main button {
+  width: 40%;
+  margin: 2.5% 0 2.5% 0;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(44, 45, 66, 0.37);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+#main button:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#game {
+  margin-top: 10%;
+  width: 80%;
+  height: 70%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(44, 45, 66, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#game .box {
+  width: 65%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(44, 45, 66, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#game .box .row {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+}
+#game .box .row .ch {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+}
+#game .box .row .ch img {
+  width: 70px;
+}
+#game .box #comment {
+  width: 90%;
+  height: 40px;
+  margin-top: 20px;
+  color: #222;
+}
+#game .row {
+  height: 25%;
+  width: 80%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#game .row .item {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(44, 45, 66, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 30%;
+  height: 100%;
+  cursor: pointer;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#game .row .item img {
+  width: 50px;
+}
+#game .row .item:hover {
+  box-shadow: 0 8px 32px 0 rgba(44, 45, 66, 0.8);
+}
+#game .prow {
+  height: 5%;
+  width: 80%;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#game .prow .point {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 70px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(44, 45, 66, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #222;
+}
+
+/*# sourceMappingURL=style.css.map */

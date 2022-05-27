@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <script defer src="js/login.js"></script>
+    </head>
+    <body>
+        <nav>
+            
+            <button id="c">X</button>
+            <button id="h">_</button>
+            <div class="drag"></div>
+        </nav>
+        <div id="main" style="display: flex;">
+            <h1>Welcome!!!</h1>
+            <input id="name"type="text" placeholder="Nick">
+            <input id="id" type="text" placeholder="Room ID">
+            <button onclick="login()">Play</button>
+
+        </div>
+        <div id="game" style="display: none;">
+            <div class="prow">
+                <div class="point" id="mpoints">0</div>
+                <div class="point" id="rpoints">0</div>
+            </div>          
+            <div class="box">
+                <div class="row">
+                    <div class="ch" id="yourc"></div>
+                    <div class="ch" id="enec"></div>
+
+                </div>
+                <div id="comment">Waiting for the opponent</div>
+            </div>
+            <div class="row">
+                
+                <div class="item"onclick='send("rock")'><img src="img/rock.png"></div>
+                <div class="item"onclick='send("paper")'><img src="img/papier.png"></div>
+                <div class="item"onclick='send("scissors")'><img src="img/scissors.png"></div>
+            </div>
+
+        </div>
+    </body>
+</html>
